@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Welcome to IP Finder
 
 You can use the [editor on GitHub](https://github.com/mypablo/Dota2Blog/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
@@ -10,20 +10,44 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 
 ```markdown
 Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+import javax.swing.*;  
+import java.awt.event.*;  
+import java.net.*;  
+public class IPFinder extends JFrame implements ActionListener{  
+    JLabel l;  
+    JTextField tf;  
+    JButton b;  
+IPFinder(){  
+    super("IP Finder Tool - Javatpoint");  
+    l=new JLabel("Enter URL:");  
+    l.setBounds(50,70,150,20);;  
+    tf=new JTextField();  
+    tf.setBounds(50,100,200,20);  
+      
+    b=new JButton("Find IP");  
+    b.setBounds(50,150,80,30);  
+    b.addActionListener(this);  
+    add(l);  
+    add(tf);  
+    add(b);  
+    setSize(300,300);  
+    setLayout(null);  
+    setVisible(true);  
+}  
+public void actionPerformed(ActionEvent e){  
+    String url=tf.getText();  
+    try {  
+        InetAddress ia=InetAddress.getByName(url);  
+        String ip=ia.getHostAddress();  
+        JOptionPane.showMessageDialog(this,ip);  
+    } catch (UnknownHostException e1) {  
+        JOptionPane.showMessageDialog(this,e1.toString());  
+    }  
+}  
+public static void main(String[] args) {  
+    new IPFinder();  
+}  
+}  
 ```
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
