@@ -14,13 +14,13 @@ public class IPAFinder {
 		 	sysip="System IP Address : ";
 		 
 		 
-	        //Prints System IP Address
+	         //Prints System IP Address
 		 
 	        InetAddress localhost = InetAddress.getLocalHost(); 
 	        JOptionPane.showMessageDialog(null,localhost.getHostAddress(), sysip , JOptionPane.INFORMATION_MESSAGE);
 	        
 	  
-	        // Find public IP address 
+	         // Find public IP address 
 	        String systemipaddress = ""; 
 	        try
 	        { 
