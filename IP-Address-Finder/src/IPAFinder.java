@@ -37,7 +37,7 @@ public class IPAFinder {
 	            systemipaddress = "Cannot Execute Properly"; 
 	        } 
 	        //Prints public ip address
-	        JOptionPane.showMessageDialog(null,localhost.getHostAddress(),pubip , JOptionPane.INFORMATION_MESSAGE);
+	        JOptionPane.showMessageDialog(null,systemipaddress,pubip , JOptionPane.INFORMATION_MESSAGE);
 	        
 	    } 
 	} 
