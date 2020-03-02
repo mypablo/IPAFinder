@@ -38,6 +38,6 @@ public class IPAFinder {
 	        } 
 	        //Prints public ip address
 	        JOptionPane.showMessageDialog(null,localhost.getHostAddress(),pubip , JOptionPane.INFORMATION_MESSAGE);
-	        System.out.println("Public IP Address: " + systemipaddress +"\n"); 
+	        
 	    } 
 	} 
