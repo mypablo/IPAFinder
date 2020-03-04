@@ -2,9 +2,7 @@
 
 I make this code to find IP Address
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
 ```java
 Syntax highlighted code block
